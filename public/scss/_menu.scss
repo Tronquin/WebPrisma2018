@@ -1,0 +1,157 @@
+// ####################### Navbar #######################
+
+// ####################### Menu Button #######################
+.menu-btn {
+  position: absolute;
+  z-index: 6;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: set-text-color($primary-color);
+    transition: all 0.5s ease-out;
+  }
+
+  // Rotate Into X With Menu Lines
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 3px);
+      }
+
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -6px);
+      }
+    }
+  }
+}
+
+// ####################### Menu Overlay #######################
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    list-style: none;
+    transition: all 0.5s ease-out;
+    opacity: 0;
+
+    &.show {
+      // Slide in from top
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .menu-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-self: right;
+  }
+
+  .nav-img {
+    width: 7rem;
+    cursor: pointer;
+  }
+
+  .menu-info {
+    list-style: none;
+    margin: 0rem 5rem;
+    padding: 0;
+    .info-header {
+      font-weight: 600;
+      transition: all 0.5s;
+      font-size: 1.2rem;
+      margin: 0;
+      padding-top: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    .info-content {
+      font-size: 0.5rem;
+    }
+  }
+
+  .nav-item {
+    opacity: 0;
+
+    &.show {
+      // Slide in from right
+      transition: all 0.5s ease-in both;
+      opacity: 1;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &.current > a {
+      color: ed2327;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    font-weight: 300;
+    color: set-text-color($primary-color);
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      color: #ed2327;
+    }
+  }
+}
+
+// ####################### Delay Navbar Items #######################
+@for $x from 1 through 8 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * (0.1s);
+  }
+}

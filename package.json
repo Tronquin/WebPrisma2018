@@ -1,0 +1,23 @@
+{
+  "name": "prisma-web",
+  "version": "1.0.0",
+  "description": "Website Prisma",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w public/scss/ -o public/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronquin/WebPrisma2018.git"
+  },
+  "author": "Francisco Bejarano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tronquin/WebPrisma2018/issues"
+  },
+  "homepage": "https://github.com/Tronquin/WebPrisma2018#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-sass": "^4.9.3"
+  }
+}

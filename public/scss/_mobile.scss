@@ -1,0 +1,482 @@
+// ####################### Extra Large Devices #######################
+@include mediaXL {
+  .mix,
+  .gap {
+    width: calc(100% / 5 - (((5 - 1) * 0rem) / 5)) !important;
+  }
+}
+
+@include mediaXL-Landscape {
+}
+
+// ####################### Large Devices #######################
+@include mediaLg {
+  .menu-nav {
+    .menu-options {
+      .icons-menu {
+        margin-top: 0rem !important;
+        display: block;
+      }
+    }
+  }
+
+  // ----------------- Portfolio -----------------
+  .mix,
+  .gap {
+    width: calc(100% / 4 - (((4 - 1) * 0rem) / 4)) !important;
+  }
+}
+
+@include mediaLg-Landscape {
+  // ----------------- Menu -----------------
+  .nav-img {
+    top: 0.5rem;
+  }
+  .menu-nav {
+    .menu-options {
+      .icons-menu {
+        margin-top: 0 !important;
+        display: block;
+      }
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+      .goog-te-menu-value {
+        font-size: 0.8rem;
+      }
+
+      .goog-te-menu-value {
+        margin: 0 !important;
+      }
+    }
+
+    .menu-info {
+      .info-header {
+        font-size: 0.8rem;
+      }
+      li {
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+  // ----------------- Index -----------------
+  #slider-item {
+    .glitch {
+      font-size: 4rem !important;
+      margin-left: 0 !important;
+      align-self: center;
+    }
+
+    .sm-heading {
+      font-size: 0.8rem !important;
+      margin-left: 0rem !important;
+      align-self: center;
+    }
+
+    .btn {
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0 0 2em;
+      max-width: 100px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+      background-color: #0000006b;
+    }
+
+    .btn-5 {
+      text-align: center;
+      border: 0.1rem solid #ed2327;
+      border-radius: 50px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+      align-self: center;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .slide-2 {
+    background-position: right !important;
+  }
+
+  // ----------------- footer -----------------
+}
+
+// ####################### Medium Devices #######################
+@include mediaMd {
+  // ----------------- misc -----------------
+  .swiper-container-vertical > .swiper-pagination-bullets {
+    top: 87% !important;
+    right: 50% !important;
+    transform: rotate(90deg) !important;
+  }
+
+  .goog-te-gadget-simple {
+    margin-top: 0rem !important;
+    padding: 0rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .fancybox-content p {
+    margin: 3rem !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_right {
+    display: none !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_left {
+    display: none !important;
+  }
+
+  // ----------------- menu -----------------
+  .menu-nav {
+    .menu-options {
+      .icons-menu {
+        margin-top: 0 !important;
+        display: block;
+      }
+      li {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+      .goog-te-menu-value {
+        font-size: 1rem;
+      }
+
+      .goog-te-menu-value {
+        margin: 0 !important;
+      }
+    }
+
+    .menu-info {
+      li {
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+
+  // ----------------- Index -----------------
+  #slider-item {
+    .glitch {
+      font-size: 4rem !important;
+      margin-left: 0 !important;
+      align-self: center;
+    }
+
+    .sm-heading {
+      font-size: 0.8rem !important;
+      margin-left: 0rem !important;
+      align-self: center;
+    }
+
+    .btn {
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0 0 2em;
+      max-width: 100px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+      background-color: #0000006b;
+    }
+
+    .btn-5 {
+      text-align: center;
+      border: 0.1rem solid #ed2327;
+      border-radius: 50px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+      align-self: center;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .slide-2 {
+    background-position: right !important;
+  }
+
+  // ----------------- services ----------------
+  .portfolio-link {
+    border: 2px solid $secondary-color;
+    border-radius: 50px;
+    width: 10rem;
+    bottom: 8rem !important;
+    left: 0 !important;
+    background-color: #0000006b;
+    margin: auto !important;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  #slider-item {
+    .service-text {
+      h1 {
+        font-size: 3rem !important;
+      }
+
+      p {
+        width: 25rem !important;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  // ----------------- Portfolio ----------------
+
+  .mix,
+  .gap {
+    width: calc(100% / 3 - (((3 - 1) * 0rem) / 3)) !important;
+  }
+
+  .footer-items-portfolio {
+    margin-right: 0rem !important;
+    .portfolio-filters {
+      display: none;
+    }
+
+    .copyright {
+      display: block !important;
+    }
+  }
+
+  // ----------------- footer -----------------
+}
+
+@include mediaMd-Landscape {
+  .goog-te-gadget-simple {
+    margin-top: 0rem !important;
+    padding: 0rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .fancybox-content p {
+    margin: 3rem !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_right {
+    display: none !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_left {
+    display: none !important;
+  }
+
+  .fullscreen-video-wrap {
+    display: none;
+  }
+
+  // ----------------- Menu -----------------
+  .menu-nav {
+    .menu-options {
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+      .goog-te-menu-value {
+        font-size: 0.8rem;
+      }
+
+      .goog-te-menu-value {
+        margin: 0 !important;
+      }
+    }
+
+    .menu-info {
+      .info-header {
+        font-size: 0.8rem;
+      }
+      li {
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+  // ----------------- Index -----------------
+  #slider-item {
+    .glitch {
+      font-size: 4rem !important;
+      margin-left: 0 !important;
+      align-self: center;
+    }
+
+    .sm-heading {
+      font-size: 0.8rem !important;
+      margin-left: 0rem !important;
+      align-self: center;
+    }
+
+    .btn {
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0 0 2em;
+      max-width: 100px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+      background-color: #0000006b;
+    }
+
+    .btn-5 {
+      text-align: center;
+      border: 0.1rem solid #ed2327;
+      border-radius: 50px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+      align-self: center;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .slide-2 {
+    background-position: right !important;
+  }
+
+  // ----------------- services ----------------
+  .portfolio-link {
+    border: 2px solid $secondary-color;
+    border-radius: 50px;
+    width: 10rem;
+    bottom: 5rem !important;
+    left: 0 !important;
+    background-color: #0000006b;
+    margin: auto !important;
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  #slider-item {
+    .service-text {
+      h1 {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        width: 25rem !important;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  // ----------------- footer -----------------
+}
+
+// ####################### Small Devices #######################
+@include mediaSm {
+  // ----------------- misc ----------------
+  .goog-te-gadget-simple {
+    margin-top: 0rem !important;
+    padding: 0rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_right {
+    display: none !important;
+  }
+
+  .fancybox-navigation .fancybox-button--arrow_left {
+    display: none !important;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 40px !important;
+  }
+
+  // ----------------- menu -----------------
+  .menu-nav {
+    grid-template-rows: 1fr !important;
+    grid-template-columns: none !important;
+
+    .menu-options {
+      padding: 15rem 0;
+      justify-self: center;
+      text-align: center;
+
+      .goog-te-menu-value {
+        margin: 0rem 1rem !important;
+      }
+      .icons-menu {
+        margin-top: 0 !important;
+        display: block;
+      }
+    }
+
+    .menu-info {
+      display: none;
+    }
+  }
+
+  // ----------------- Index -----------------
+  #slider-item {
+    .glitch {
+      font-size: 3rem !important;
+      margin-left: 0 !important;
+      align-self: left !important;
+    }
+
+    .sm-heading {
+      font-size: 0.7rem !important;
+      margin-left: 0rem !important;
+      align-self: left !important ;
+    }
+
+    .btn-5 {
+      align-self: left !important;
+    }
+  }
+  // ----------------- service -----------------
+
+  #slider-item {
+    .service-text {
+      h1 {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        width: 18rem !important;
+        font-size: 0.7rem;
+      }
+    }
+  }
+  // ----------------- Portfolio -----------------
+  .mix,
+  .gap {
+    width: calc(100% / 1 - (((1 - 1) * 0rem) / 1)) !important;
+  }
+
+  // ----------------- footer -----------------
+  .footer {
+    .footer-items {
+      margin-right: 0rem !important;
+    }
+
+    .footer-items-portfolio {
+      margin-right: 0rem !important;
+    }
+  }
+}
